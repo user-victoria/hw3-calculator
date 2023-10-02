@@ -5,46 +5,46 @@
 // запитуємо у користувача друге число;
 // виводимо результат дії (add, sub, mult, div) з усіма операндами (Наприклад "2 + 3 = 5").
 
-let question = prompt('What do you want to do? Write ("add" or "sub" or "mult" or "div")');
+const question = prompt('What do you want to do? Write ("add" or "sub" or "mult" or "div")');
 
 if (question === 'add') {
-    let num1 = +prompt('Write a number');
-    let num2 = +prompt('Write one more number');
-    if (isNaN(num1) || isNaN(num2)) {
+    const firstNumber = +prompt('Write a number');
+    const secondNumber = +prompt('Write one more number');
+    if (isNaN(firstNumber) || isNaN(secondNumber)) {
         alert('Please, write a number');
     }
     else {
-        alert(`${num1}+${num2} = ${num1 + num2}`);
+        alert(`${firstNumber}+${secondNumber} = ${firstNumber + secondNumber}`);
     }
 }
 else if (question === 'sub') {
-    let num1 = +prompt('Write a number');
-    let num2 = +prompt('Write one more number');
-    if (isNaN(num1) || isNaN(num2)) {
+    const firstNumber = +prompt('Write a number');
+    const secondNumber = +prompt('Write one more number');
+    if (isNaN(firstNumber) || isNaN(secondNumber)) {
         alert('Please, write a number');
     }
     else {
-        alert(`${num1}-${num2} = ${num1 - num2}`);
+        alert(`${firstNumber}-${secondNumber} = ${firstNumber - secondNumber}`);
     }
 }
 else if (question === 'mult') {
-    let num1 = +prompt('Write a number');
-    let num2 = +prompt('Write one more number');
-    if (isNaN(num1) || isNaN(num2)) {
+    const firstNumber = +prompt('Write a number');
+    const secondNumber = +prompt('Write one more number');
+    if (isNaN(firstNumber) || isNaN(secondNumber)) {
         alert('Please, write a number');
     }
     else {
-        alert(`${num1}*${num2} = ${num1 * num2}`);
+        alert(`${firstNumber}*${secondNumber} = ${firstNumber * secondNumber}`);
     }
 }
 else if (question === 'div') {
-    let num1 = +prompt('Write a number');
-    let num2 = +prompt('Write one more number');
-    if (isNaN(num1) || isNaN(num2)) {
+    const firstNumber = +prompt('Write a number');
+    const secondNumber = +prompt('Write one more number');
+    if (isNaN(firstNumber) || isNaN(secondNumber)) {
         alert('Please, write a number');
     }
     else {
-        alert(`${num1}/${num2} = ${num1 / num2}`);
+        alert(`${firstNumber}/${secondNumber} = ${firstNumber / secondNumber}`);
     }
 }
 else {
